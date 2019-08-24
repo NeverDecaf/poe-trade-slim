@@ -19,6 +19,15 @@
     flex: 0 0 10%;
     overflow:hidden;
 }
+
+/* Top-align item descriptions. */
+.results:not(.compact) .row .middle {
+	align-self: stretch;
+}
+.results:not(.compact) .row .middle .itemPopupContainer {
+	height: 100%;
+}
+
 /*[[item-order]]*/
 
  .results:not(.compact) .row:not(.row-total) {
@@ -68,7 +77,7 @@
     font-size: 1.2em;
     padding-left: .25em;
     padding-top: .1em;
-    height:100%;
+    height:auto;
 }
 /* Use grid layout to have multiple (2) columns */
  .results:not(.compact) .itemBoxContent .content {
@@ -120,7 +129,6 @@
     position:relative;
 }
 .results:not(.compact) [class$=Mod] .l > .d {
-    background: #1d1d1d;
     right:0;
     z-index:100;
     position:relative;
@@ -130,6 +138,13 @@
 .results:not(.compact) [class$=Mod]:hover .l {
     font-size:0%;
 }
+
+.results:not(.compact) [class$=Mod]:hover .lc.l > .d,
+.results:not(.compact) [class$=Mod]:hover .lc.s,
+.results:not(.compact) [class$=Mod]:hover .lc.r > .d {
+    background: #1d1d1d;
+}
+
 /* Right align properties as much as possible */
  .results:not(.compact) .displayProperty > .lc, .results:not(.compact) .requirements > .lc {
     display:flex;
@@ -159,17 +174,21 @@
     justify-content: space-between;
 }
 .results:not(.compact) .itemBoxContent .content [class$=Mod] .l {
-    position:relative;
+    position:absolute;
 	flex: 0 0 auto;
     order: 3;
+	text-align:right;
+    right:0;
 }
 /* hide prefix/suffix names */
  .results:not(.compact) [class$=Mod]:hover .r {
-    position: relative;
+    position: absolute;
     flex: 1 1 auto;
-    overflow: hidden;
+    overflow: visible;
     text-align: left;
     order: 2;
+    left: 100%;
+	padding: 0;
 }
  .results:not(.compact) [class$=Mod]:hover .r > .d {
     white-space:nowrap;
@@ -177,6 +196,7 @@
 .results:not(.compact) .itemBoxContent .content [class$=Mod] .s {
     flex: 0 0 auto;
     order:1;
+	width: 100%;
 }
 /* Hide xp bar number */
  .results:not(.compact) .experienceBar + span {
@@ -258,17 +278,20 @@
     color:#e9cf9f;
 }
 /* position remaining text */
- .results:not(.compact) .divinationCard {
+ .results:not(.compact) .divinationCard, .results:not(.compact) .divinationCard .itemBoxContent .explicitModsWrapper .explicitModsContainer {
     display:contents;
-}
-.results:not(.compact) .divinationCard .itemBoxContent {
-    display:flex;
-    flex-direction:column;
 }
 .results:not(.compact) .divinationCard .itemBoxContent .explicitModsWrapper {
     position:relative;
     text-align:left;
     padding-top:.3em;
     margin-left:0;
+	display:inline;
+}
+/* Add background to match other items */
+.results:not(.compact) .divinationCard {
+    background:#000000CC;
+    display:inline-block;
+	max-width:none;
 }
 }

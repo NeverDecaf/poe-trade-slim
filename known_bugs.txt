@@ -1,0 +1,10 @@
+
+minor bugs will probably be ignored unless easily fixed
+
+==== major ====
+
+==== minor ====
+fossils which apply to all item types have scrunched text
+vaal gem doesnt show vaal skill (intentional I believe)
+veiled mod needs a small amount of left padding
+mod tier/range portion is not clickable for sorting
