@@ -24,10 +24,19 @@
 .results:not(.compact) .row .middle {
 	align-self: stretch;
 }
+/* Show Additional info (dps). */
+.results:not(.compact) .row .middle {
+    display: flex;
+    flex-direction: column;
+}
 .results:not(.compact) .row .middle .itemPopupContainer {
-	height: 100%;
+    flex: 1 1 auto;
 }
 
+.results:not(.compact) .row .middle .itemPopupAdditional {
+    flex: 0 1 auto;
+    margin-top: 0px;
+}
 /*[[item-order]]*/
 
  .results:not(.compact) .row:not(.row-total) {
