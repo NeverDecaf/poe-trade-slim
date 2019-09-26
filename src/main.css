@@ -37,6 +37,13 @@
     flex: 0 1 auto;
     margin-top: 0px;
 }
+/* Shrink header */
+.logo {
+    height:6em;
+}
+.logo a {
+    max-width:10em;
+}
 /*[[item-order]]*/
 
  .results:not(.compact) .row:not(.row-total) {
