@@ -310,4 +310,72 @@
     display:inline-block;
 	max-width:none;
 }
+/* POE Trade Enhancer CSS Below Here */
+.results:not(.compact) .row .details .gs-wrapper {
+    flex: 0 1 auto;
+}
+/* An exception: this also affects compact views. */
+.results :not(.exchange) .row .details .price,
+.results .exchange .row .details.left .price {
+    display: flex;
+}
+.results .exchange .row .details.left .price {
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 4em;
+    align-content: flex-end;
+}
+.results:not(.compact) .row .details .gs-wrapper .chaosEquiv,
+.results:not(.compact) .row .details .gs-wrapper .gs-style {
+    padding: 0 1px 0 2px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.results:not(.compact) .row .details .gs-wrapper:nth-child(2) span,
+.results .exchange .row .details.left .price .gs-wrapper:nth-child(3) span {
+    margin-left: 3px;
+}
+.results:not(.compact) .row .details .gs-wrapper .chaosEquiv .currency b,
+.results:not(.compact) .row .details .gs-style b {
+    display: none;
+}
+.results:not(.compact) .row .details .gs-wrapper .gs-more {
+    word-spacing: 2em;
+    max-width: 1.4em;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.results:not(.compact) .row .details .price .s {
+    flex: 1 1 auto;
+}
+
+.results:not(.compact) .row .details .currency-image span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    max-width: calc(100% - 8.5em);
+    display: inline-block;
+    vertical-align: middle;
+}
+.results:not(.compact) .row .details .btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.results:not(.compact) .row .details .btns .pull-right,
+.results:not(.compact) .row .details .ignore-btno {
+    flex: 0 1 auto;
+    align-self: flex-end;
+}
+.results:not(.compact) .row .details .btns .pull-left {
+    flex: 0 1 auto;
+    align-self: flex-start;
+}
+.results:not(.compact) .row .details .btns .clear {
+    display: none;
+}
 }
