@@ -79,21 +79,29 @@
 }
 /* === Middle === */
 
-/* Shrink item name and remove decoration */
- .results:not(.compact) .itemBoxContent .itemHeader .l, .results:not(.compact) .itemBoxContent .itemHeader .r {
-    display:none;
+/* Shrink item name and decoration */
+.results:not(.compact) .itemBoxContent .itemHeader {
+    display: flex;
+}
+ .results:not(.compact) .itemBoxContent .itemHeader .l:after, .results:not(.compact) .itemBoxContent .itemHeader .r:after {
+    position: static;
+    background-size: 1.2em 1.2em;
+    height: 1em;
+    width: 1.2em;
 }
 .results:not(.compact) .itemBoxContent .itemHeader .itemName, .results:not(.compact) .itemPopupContainer .itemBoxContent .itemName .lc {
-    display:inline;
     padding: 0;
+}
+.results:not(.compact) .itemBoxContent .itemHeader .itemName:first-of-type {
+    padding-right: .3em;
 }
 .results:not(.compact) .itemPopupContainer .itemBoxContent .itemHeader {
     background: none;
-    text-align:left;
+    text-align: left;
     font-size: 1.2em;
     padding-left: .25em;
     padding-top: .1em;
-    height:auto;
+    height: auto;
 }
 /* Use grid layout to have multiple (2) columns */
  .results:not(.compact) .itemBoxContent .content {
