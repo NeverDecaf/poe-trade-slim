@@ -4,6 +4,8 @@ Userstyle (CSS) for pathofexile.com/trade to resemble poe.trade style, saving sp
 - Install Stylus ([Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) / [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/))
 - Add to Stylus from [here](https://userstyles.org/styles/161261/poe-trade-slim)
 ### Changelog
+#### 25.12.2019
+- Show influence icons
 #### 24.08.2019
 - Fixed divination card text overlapping
 - All descriptions are now top-aligned
