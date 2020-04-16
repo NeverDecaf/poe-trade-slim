@@ -140,6 +140,17 @@
  .itemBoxContent .content .implicitMod {
     color:#b4b4ff;
 }
+/* highlight "Corrupted" text */
+ .unmet {
+    background:#ff000040;
+}
+/* hide incubator bar */
+ .row .incubated {
+    padding: 0px 6.08519px;
+}
+ .row .incubated *:not(:first-child) {
+    display:none;
+}
 /* highlight enchants and crafted mods */
  .enchantMod, .craftedMod {
     background:#6b6bd730;
