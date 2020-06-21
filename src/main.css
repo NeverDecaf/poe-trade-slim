@@ -115,7 +115,7 @@
  .results:not(.compact) .itemBoxContent .content > div {
     grid-column-start: 2;
 }
-.results:not(.compact) .itemBoxContent .content [class*=plicitMod] {
+.results:not(.compact) .itemBoxContent .content [class*=Mod] {
     grid-column-start: 1;
 }
 /* Color resists and life, including for crafted mods */
@@ -160,23 +160,23 @@
     text-align:left;
 }
 /* Make mod ranges more visible (solid background) */
- .results:not(.compact) [class*=plicitMod] {
+ .results:not(.compact) [class*=Mod] {
     position:relative;
 }
-.results:not(.compact) [class*=plicitMod] .l > .d {
+.results:not(.compact) [class*=Mod] .l > .d {
     right:0;
     z-index:100;
     position:relative;
     white-space:nowrap;
 	font-size:10pt;
 }
-.results:not(.compact) [class*=plicitMod]:hover .l {
+.results:not(.compact) [class*=Mod]:hover .l {
     font-size:0%;
 }
 
-.results:not(.compact) [class*=plicitMod]:hover .lc.l > .d,
-.results:not(.compact) [class*=plicitMod]:hover .lc.s,
-.results:not(.compact) [class*=plicitMod]:hover .lc.r > .d {
+.results:not(.compact) [class*=Mod]:hover .lc.l > .d,
+.results:not(.compact) [class*=Mod]:hover .lc.s,
+.results:not(.compact) [class*=Mod]:hover .lc.r > .d {
     background: #1d1d1d;
 }
 
@@ -204,11 +204,11 @@
     content:"\00a0";
 }
 /* Align mod tiers */
- .results:not(.compact) .itemBoxContent .content [class*=plicitMod] {
+ .results:not(.compact) .itemBoxContent .content [class*=Mod] {
     display:flex;
     justify-content: space-between;
 }
-.results:not(.compact) .itemBoxContent .content [class*=plicitMod] .l {
+.results:not(.compact) .itemBoxContent .content [class*=Mod] .l {
     position:absolute;
 	flex: 0 0 auto;
     order: 3;
@@ -216,7 +216,7 @@
     right:0;
 }
 /* hide prefix/suffix names */
- .results:not(.compact) [class*=plicitMod]:hover .r {
+ .results:not(.compact) [class*=Mod]:hover .r {
     position: absolute;
     flex: 1 1 auto;
     overflow: visible;
@@ -225,10 +225,10 @@
     left: 100%;
 	padding: 0;
 }
- .results:not(.compact) [class*=plicitMod]:hover .r > .d {
+ .results:not(.compact) [class*=Mod]:hover .r > .d {
     white-space:nowrap;
 }
-.results:not(.compact) .itemBoxContent .content [class*=plicitMod] .s {
+.results:not(.compact) .itemBoxContent .content [class*=Mod] .s {
     flex: 0 0 auto;
     order:1;
 	width: 100%;
