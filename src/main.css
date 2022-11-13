@@ -384,6 +384,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 .results:not(.compact) .row .details .btns .pull-right,
 .results:not(.compact) .row .details .ignore-btno {

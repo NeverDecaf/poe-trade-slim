@@ -30,7 +30,6 @@
 }
 .results:not(.compact) .row .right {
     flex: 0 0 25%;
-    overflow:hidden;
 }
 /*===============item-order end=================*/
 
@@ -43,7 +42,6 @@
 }
 .results:not(.compact) .row .right {
     flex: 0 0 25%;
-    overflow:hidden;
 }
 /*===============item-order end=================*/
 
@@ -56,7 +54,6 @@
 }
 .results:not(.compact) .row .right {
     flex: 0 0 25%;
-    overflow:hidden;
     order:-2;
 }
 /*===============item-order end=================*/
