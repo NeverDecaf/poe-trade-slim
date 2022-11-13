@@ -2,8 +2,10 @@
 Userstyle (CSS) for pathofexile.com/trade to resemble poe.trade style, saving space in the process.
 ### How to Install
 - Install Stylus ([Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) / [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/))
-- Add to Stylus from [here](https://userstyles.org/styles/161261/poe-trade-slim)
+- Add to Stylus from [here](https://userstyles.org/styles/254602/poe-trade-slim-reupload)
 ### Changelog
+#### 13.11.2022
+- Whisper dropdown menu no longer hidden
 #### 25.12.2019
 - Show influence icons
 #### 24.08.2019
